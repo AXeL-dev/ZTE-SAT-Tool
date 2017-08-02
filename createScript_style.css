@@ -1,0 +1,234 @@
+/* create script css style */
+
+body {
+margin: 0;
+font-family: Helvetica,Arial,sans-serif;
+font-size: 16px;
+line-height: 20px;
+background: url("icon/body.gif") repeat-x scroll 0% 0% #FFF;
+display: inline-block; /* without this , the background image desepear, because of float of boxes */
+width: 100%;
+margin-bottom: 20px;
+}
+
+a {
+outline: none;
+text-decoration: none;
+}
+
+.script_text {
+line-height: 30px;
+}
+
+#script_config {
+overflow-y: scroll;
+max-height: 464px;
+}
+
+.box {
+margin: 20px 0px 0px 20px;
+background: #FFF;
+border: 1px solid #A9B6BD;
+padding: 0px 15px 15px;
+border-radius: 4px;
+width: 45%;
+display: inline-block;
+float: left;
+overflow: hidden;
+}
+
+.closeicon {
+float: right;
+margin: 0px 5px;
+border: 1px solid #000;
+font-family: arial;
+font-weight: bold;
+font-size: 14px;
+padding: 1px 7px;
+border-radius: 12px;
+cursor: pointer;
+}
+
+.deleteicon {
+background: #52A8CA;
+color: #FFF;
+margin-right: 5px;
+font-family: arial;
+font-weight: bold;
+font-size: 10pt;
+padding: 3px 7px;
+border-radius: 12px;
+cursor: pointer;
+}
+
+.deleteicon:hover {
+color: #52A8CA;
+background: #FFF;
+padding: 2px 6px;
+border: 1px solid #52A8CA;
+}
+
+#fullbox {
+padding: 25px 30px;
+width: auto;
+margin: 50px 100px;
+float: none;
+display: block;
+}
+
+.boxtitle {
+font-size: 18px;
+font-weight: normal;
+background-image: linear-gradient(to bottom, #FFF, #F2F2F2);
+border-bottom: 1px solid #A9B6BD;
+box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+margin: 0px -15px 15px;
+text-align: center;
+padding: 10px;
+}
+
+::selection {
+background: #52A8CA; /* WebKit/Blink Browsers */
+color: #FFF;
+}
+::-moz-selection {
+background: #52A8CA; /* Gecko Browsers */
+color: #FFF;
+}
+
+/* Sheet of Excel File */
+
+#sheet0 {
+display: inline-block;
+width: 100%;
+height: 420px;
+overflow: scroll;
+}
+
+#save, #execute {
+float: right;
+width: 160px;
+margin: 10px 0px 0px 10px;
+}
+
+.pushbutton {
+background-image: linear-gradient(to bottom, #FFF, #F2F2F2);
+color: #000;
+padding: 5px 20px;
+border: 1px solid #A9B6BD;
+font-size: 16px;
+border-radius: 4px;
+cursor: pointer;
+margin: 5px;
+}
+
+.pushbutton:hover {
+color: #52A8CA;
+}
+
+.pushbutton:disabled {
+color: #AFAFAF;
+border-color: #AFAFAF;
+cursor: auto;
+}
+
+#newLineContainer {
+position: fixed;
+top: 25%;
+left: 25%;
+background: #fff;
+}
+
+#newLine {
+display: none;
+}
+
+#newLine, #edit {
+float: right;
+font-size: 13px;
+margin: 0px 5px 0px 0px;
+/*margin-right: 5px;*/
+padding: 3px 10px;
+position: relative;
+top: -3px;
+}
+
+#error_container {
+display: none;
+background: #FFF;
+color: #999;
+border: 1px solid #FFF;
+}
+
+.linedwrap:nth-child(2) {
+margin-top: 5px;
+}
+
+#script_container, #error_container {
+float: left;
+font-family: Helvetica,Arial,sans-serif;
+font-size: 10pt;
+border-radius: 2px;
+width: 96%;
+height: 394px;
+padding: 5px 10px;
+resize: none;
+margin-bottom: 5px;
+}
+
+#script_container {
+background: #EBEFF0;
+color: #000;
+border: 1px solid #A9CCD1;
+}
+
+select {
+background: #EBEFF0;
+color: #000;
+border: 1px solid #A9CCD1;
+border-radius: 2px;
+padding: 2px 0px;
+font-size: 15px;
+vertical-align: middle;
+}
+
+.editBoxs {
+background: #EBEFF0;
+color: #000;
+border: 1px solid #A9CCD1;
+border-radius: 2px;
+width: 200px;
+padding: 4px 5px;
+margin: 2px 0px;
+font-size: 10pt;
+vertical-align: middle;
+}
+
+.txtBoxs {
+background: #FFF;
+border: none;
+font-size: 16px;
+margin: 4px 0px;
+vertical-align: middle;
+}
+
+#error_field , #success_field{
+display: none;
+margin: 10px 0px 0px;
+}
+
+#error_field  span, #error_field  img, #success_field  img {
+vertical-align: middle;
+}
+
+#error_field  span {
+padding: 5px;
+color: red;
+font-size: 10pt;
+}
+
+.disable_all {
+opacity: 0.3;
+pointer-events: none;
+}
+

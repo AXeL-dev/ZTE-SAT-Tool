@@ -1,0 +1,63 @@
+/* header style */
+
+#header {
+padding: 10px 20px 6px;
+background-image: linear-gradient(to bottom, #FFF, #F2F2F2);
+border-top: 3px solid #52A8CA !important;
+box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+border-bottom: 1px solid #A9B6BD;
+}
+
+.navbar {
+position: relative;
+float: right;
+list-style: none;
+margin: 15px 10px 0px;
+}
+
+.navbar li {
+float: left;
+}
+
+.navbar li a {
+text-decoration: none;
+color: #000;
+}
+
+.navbar li a:hover {
+color: #52A8CA;
+}
+
+.navicon {
+margin: 0px 5px;
+background: #52A8CA;
+color: #FFF;
+font-weight: bold;
+padding: 2px 7px;
+border-radius: 12px;
+}
+
+.loadicon {
+background-image: url("icon/load.gif");
+display: inline-block;
+width: 16px;
+height: 16px;
+}
+
+#configicon {
+padding: 3px 6px;
+border-radius: 13px;
+}
+
+#telneticon{
+padding: 3px 5px;
+border-radius: 13px;
+}
+
+.separator {
+height: 70px; /* 75px of height - 5px of border top */
+margin: -25px 9px 0px; /* -15px of navbar margin & -10px of header padding */
+border-left: 1px solid #F2F2F2;
+border-right: 1px solid #FFF;
+}
+

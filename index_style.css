@@ -1,0 +1,175 @@
+/* index style */
+
+body {
+margin: 0;
+font-family: Helvetica,Arial,sans-serif;
+font-size: 16px;
+line-height: 20px;
+background: url("icon/body.gif") repeat-x scroll 0% 0% #FFF;
+}
+
+a {
+outline: none;
+}
+
+.bodyicon {
+margin: 0px 20px;
+background: #52A8CA;
+color: #FFF;
+font-size: 20px;
+font-weight: bold;
+padding: 14px;
+border-radius: 26px;
+}
+
+.box {
+margin: 50px 100px;
+background: #FFF;
+border: 1px solid #A9B6BD;
+padding: 25px 30px;
+border-radius: 4px;
+}
+
+#browse {
+display: none;
+}
+
+#choose {
+background-image: linear-gradient(to bottom, #FFF, #F2F2F2);
+border: 1px solid #A9B6BD;
+color: #000;
+width: 30%;
+padding: 10px 0px;
+border-radius: 4px;
+font-size: 20px;
+}
+
+#choose:hover {
+color: #52A8CA;
+}
+
+/* drag drop style */
+
+#dragandrop {
+display: inline-block;
+width: 50%;
+text-align: center;
+background-color: #FFF;
+border: 2px dashed #A9B6BD;
+color: #A9B6BD;
+/*border-radius: 4px;*/
+padding: 120px 15px;
+font-size: 22px;
+}
+
+.statusbar {
+border-top: 1px solid #A9CCD1;
+min-height: 25px;
+/*width: 700px;*/
+padding: 10px 10px 0px;
+}
+
+:not(.statusbar) + .statusbar { /* first element that have statusbar class (coming after an element who doesn't have statusbar class) */
+margin-top: 20px;
+}
+
+.statusbar:nth-child(odd) {
+background: #EBEFF0;
+}
+
+.filename {
+display: inline-block;
+width: 35%;
+}
+
+.filesize {
+display: inline-block;
+color: #30693D;
+width: 100px;
+margin-left: 10px;
+margin-right: 5px;
+}
+
+.delete, .createScript {
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+display: inline-block;
+color: #fff;
+font-family: arial;
+font-size: 13px;
+font-weight: normal;
+padding: 4px 15px;
+cursor: pointer;
+position: relative;
+top: -6px;
+margin: 0px 5px;
+float: right;
+}
+
+.loadicon, .showFileLabel {
+float: right;
+}
+
+.showFile {
+position: relative;
+bottom: -2px;
+}
+
+.showFileLabel {
+font-family: arial;
+font-size: 13px;
+font-weight: normal;
+margin-right: 5px;
+position: relative;
+top: -4px;
+}
+
+.delete {
+background-color: #A8352F;
+}
+
+.createScript {
+text-decoration: none;
+background-color: #52A8CA;
+}
+
+.progressBar {
+display:inline-block;
+width: 200px;
+height: 22px;
+border: 1px solid #ddd;
+border-radius: 5px;
+position: relative;
+top: -4px;
+}
+ 
+.progressBar div {
+color: #fff;
+text-align: right;
+line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+background-color: #0ba1b5;
+border-radius: 3px;
+}
+
+.abort{
+background-color: #A8352F;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+display: inline-block;
+color:#fff;
+font-family: arial;
+font-size: 13px;
+font-weight: normal;
+padding: 2px 15px;
+margin: 0px 5px;
+cursor: pointer;
+position: relative;
+top: -4px;
+}
+
+.filename, .filesize, .progressBar, .abort {
+float: left;
+}
+
